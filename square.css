@@ -1,0 +1,165 @@
+/* body{
+    background-color: yellow;
+}
+.container{
+    background-color:black;
+    text-align: center;
+    width: 20rem;
+    margin-left: 38rem;
+    margin-top: 10rem;
+    height: 20rem;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 30px 30px;
+}
+
+
+
+
+#textout{
+    color: red;
+    font-size: large;
+}
+
+
+.attribution {
+    font-size: 20px;
+    text-align: center; }
+.attribution a { 
+   color: hsl(228, 45%, 44%);
+   
+}
+
+.attribution p{
+   color:black;
+   margin-right: 4rem;
+}
+
+.enter-result{
+    margin-top: 5rem;
+}
+
+#run_button{
+    width: 10rem;
+    font-size: 20px;
+    color: black;
+    background-color: yellow;
+    border-radius: 20px 20px;
+    border-color: red;
+} */
+
+
+
+
+
+
+
+
+body {
+    background-color: yellow;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styling */
+.container {
+    background-color: black;
+    text-align: center;
+    width: 80%; /* Adjust to be 80% of the viewport width */
+    max-width: 500px; /* Max width for large screens */
+    margin: 10vh auto; /* Vertical centering using viewport height */
+    padding: 2rem; /* Padding inside the container */
+    height: auto; /* Let the height adjust naturally */
+    color: white;
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add some shadow for aesthetics */
+}
+
+/* Text Output Styling */
+#textout {
+    color: red;
+    font-size: 1.5rem; /* Use relative units */
+}
+
+/* Button Styling */
+#run_button {
+    width: 100%; /* Full width of the form container */
+    max-width: 200px; /* But limit it on larger screens */
+    font-size: 1.2rem;
+    color: black;
+    background-color: yellow;
+    border-radius: 20px;
+    border-color: red;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+
+/* Attribution Styling */
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.attribution p {
+    color: black;
+    margin-right: 4rem;
+}
+
+/* Form Input */
+#textin {
+    width: 90%; /* Adjusts according to the screen size */
+    max-width: 300px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+
+#reset_button {
+    width: 10rem;
+    font-size: 20px;
+    color: black;
+    background-color: lightgray;
+    border-radius: 20px 20px;
+    border-color: blue;
+    margin-top: 1rem;
+}
+
+/* Margin Adjustment for the Result */
+.enter-result {
+    margin-top: 2rem;
+    /* display:flex; */
+
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    #run_button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    #textout {
+        font-size: 1.2rem;
+    }
+
+    #run_button {
+        font-size: 0.9rem;
+    }
+}
